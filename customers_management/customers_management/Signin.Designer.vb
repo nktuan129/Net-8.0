@@ -22,98 +22,104 @@ Partial Class Signin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.txtPassw = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnSignin = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.btnSignup = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'txtUsername
-        '
-        Me.txtUsername.Location = New System.Drawing.Point(176, 64)
-        Me.txtUsername.Multiline = True
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(248, 32)
-        Me.txtUsername.TabIndex = 0
-        '
-        'txtPassw
-        '
-        Me.txtPassw.Location = New System.Drawing.Point(176, 148)
-        Me.txtPassw.Multiline = True
-        Me.txtPassw.Name = "txtPassw"
-        Me.txtPassw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassw.Size = New System.Drawing.Size(248, 32)
-        Me.txtPassw.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(64, 76)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 20)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "User name:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(64, 160)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Password:"
-        '
-        'btnSignin
-        '
-        Me.btnSignin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignin.Location = New System.Drawing.Point(68, 215)
-        Me.btnSignin.Name = "btnSignin"
-        Me.btnSignin.Size = New System.Drawing.Size(90, 41)
-        Me.btnSignin.TabIndex = 2
-        Me.btnSignin.Text = "Sign in"
-        Me.btnSignin.UseVisualStyleBackColor = True
-        '
-        'btnExit
-        '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(284, 215)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 41)
-        Me.btnExit.TabIndex = 4
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'btnSignup
-        '
-        Me.btnSignup.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignup.Location = New System.Drawing.Point(176, 215)
-        Me.btnSignup.Name = "btnSignup"
-        Me.btnSignup.Size = New System.Drawing.Size(91, 41)
-        Me.btnSignup.TabIndex = 3
-        Me.btnSignup.Text = "Sign up"
-        Me.btnSignup.UseVisualStyleBackColor = True
-        '
-        'Signin
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 313)
-        Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnSignup)
-        Me.Controls.Add(Me.btnSignin)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtPassw)
-        Me.Controls.Add(Me.txtUsername)
-        Me.Name = "Signin"
-        Me.Text = "Sign in"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        txtUsername = New TextBox()
+        txtPassw = New TextBox()
+        Label1 = New Label()
+        Label2 = New Label()
+        btnSignin = New Button()
+        btnExit = New Button()
+        btnSignup = New Button()
+        SuspendLayout()
+        ' 
+        ' txtUsername
+        ' 
+        txtUsername.Location = New Point(176, 80)
+        txtUsername.Margin = New Padding(3, 4, 3, 4)
+        txtUsername.Multiline = True
+        txtUsername.Name = "txtUsername"
+        txtUsername.Size = New Size(248, 39)
+        txtUsername.TabIndex = 0
+        ' 
+        ' txtPassw
+        ' 
+        txtPassw.Location = New Point(176, 185)
+        txtPassw.Margin = New Padding(3, 4, 3, 4)
+        txtPassw.Multiline = True
+        txtPassw.Name = "txtPassw"
+        txtPassw.PasswordChar = "*"c
+        txtPassw.Size = New Size(248, 39)
+        txtPassw.TabIndex = 1
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Microsoft Sans Serif", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(64, 95)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(106, 20)
+        Label1.TabIndex = 1
+        Label1.Text = "User name:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Microsoft Sans Serif", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(64, 200)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(97, 20)
+        Label2.TabIndex = 1
+        Label2.Text = "Password:"
+        ' 
+        ' btnSignin
+        ' 
+        btnSignin.Font = New Font("Microsoft Sans Serif", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSignin.Location = New Point(68, 269)
+        btnSignin.Margin = New Padding(3, 4, 3, 4)
+        btnSignin.Name = "btnSignin"
+        btnSignin.Size = New Size(90, 51)
+        btnSignin.TabIndex = 2
+        btnSignin.Text = "Sign in"
+        btnSignin.UseVisualStyleBackColor = True
+        ' 
+        ' btnExit
+        ' 
+        btnExit.Font = New Font("Microsoft Sans Serif", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnExit.Location = New Point(247, 269)
+        btnExit.Margin = New Padding(3, 4, 3, 4)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(75, 51)
+        btnExit.TabIndex = 4
+        btnExit.Text = "Exit"
+        btnExit.UseVisualStyleBackColor = True
+        ' 
+        ' btnSignup
+        ' 
+        btnSignup.Font = New Font("Microsoft Sans Serif", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSignup.Location = New Point(406, 269)
+        btnSignup.Margin = New Padding(3, 4, 3, 4)
+        btnSignup.Name = "btnSignup"
+        btnSignup.Size = New Size(91, 51)
+        btnSignup.TabIndex = 3
+        btnSignup.Text = "Sign up"
+        btnSignup.UseVisualStyleBackColor = True
+        ' 
+        ' Signin
+        ' 
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(509, 391)
+        Controls.Add(btnExit)
+        Controls.Add(btnSignup)
+        Controls.Add(btnSignin)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Controls.Add(txtPassw)
+        Controls.Add(txtUsername)
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Signin"
+        Text = "Sign in"
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 

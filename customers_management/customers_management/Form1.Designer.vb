@@ -22,208 +22,219 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.labelCustomerName = New System.Windows.Forms.Label()
-        Me.txtCustomerName = New System.Windows.Forms.TextBox()
-        Me.labelAddress = New System.Windows.Forms.Label()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
-        Me.labelPhone = New System.Windows.Forms.Label()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
-        Me.labelEmail = New System.Windows.Forms.Label()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.labelGender = New System.Windows.Forms.Label()
-        Me.comboGender = New System.Windows.Forms.ComboBox()
-        Me.customerView = New System.Windows.Forms.DataGridView()
-        Me.btnSearch = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        CType(Me.customerView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'labelCustomerName
-        '
-        Me.labelCustomerName.AutoSize = True
-        Me.labelCustomerName.Location = New System.Drawing.Point(12, 28)
-        Me.labelCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelCustomerName.Name = "labelCustomerName"
-        Me.labelCustomerName.Size = New System.Drawing.Size(103, 16)
-        Me.labelCustomerName.TabIndex = 1
-        Me.labelCustomerName.Text = "Tên khách hàng"
-        '
-        'txtCustomerName
-        '
-        Me.txtCustomerName.Location = New System.Drawing.Point(16, 48)
-        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(200, 22)
-        Me.txtCustomerName.TabIndex = 2
-        '
-        'labelAddress
-        '
-        Me.labelAddress.AutoSize = True
-        Me.labelAddress.Location = New System.Drawing.Point(301, 28)
-        Me.labelAddress.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelAddress.Name = "labelAddress"
-        Me.labelAddress.Size = New System.Drawing.Size(47, 16)
-        Me.labelAddress.TabIndex = 3
-        Me.labelAddress.Text = "Địa chỉ"
-        '
-        'txtAddress
-        '
-        Me.txtAddress.Location = New System.Drawing.Point(305, 48)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(200, 22)
-        Me.txtAddress.TabIndex = 4
-        '
-        'labelPhone
-        '
-        Me.labelPhone.AutoSize = True
-        Me.labelPhone.Location = New System.Drawing.Point(584, 28)
-        Me.labelPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelPhone.Name = "labelPhone"
-        Me.labelPhone.Size = New System.Drawing.Size(85, 16)
-        Me.labelPhone.TabIndex = 5
-        Me.labelPhone.Text = "Số điện thoại"
-        '
-        'txtPhone
-        '
-        Me.txtPhone.Location = New System.Drawing.Point(588, 48)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(200, 22)
-        Me.txtPhone.TabIndex = 6
-        '
-        'labelEmail
-        '
-        Me.labelEmail.AutoSize = True
-        Me.labelEmail.Location = New System.Drawing.Point(12, 118)
-        Me.labelEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelEmail.Name = "labelEmail"
-        Me.labelEmail.Size = New System.Drawing.Size(41, 16)
-        Me.labelEmail.TabIndex = 7
-        Me.labelEmail.Text = "Email"
-        '
-        'txtEmail
-        '
-        Me.txtEmail.Location = New System.Drawing.Point(16, 138)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(200, 22)
-        Me.txtEmail.TabIndex = 8
-        '
-        'labelGender
-        '
-        Me.labelGender.AutoSize = True
-        Me.labelGender.Location = New System.Drawing.Point(301, 118)
-        Me.labelGender.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelGender.Name = "labelGender"
-        Me.labelGender.Size = New System.Drawing.Size(54, 16)
-        Me.labelGender.TabIndex = 9
-        Me.labelGender.Text = "Giới tính"
-        '
-        'comboGender
-        '
-        Me.comboGender.FormattingEnabled = True
-        Me.comboGender.Items.AddRange(New Object() {"Nam", "Nữ"})
-        Me.comboGender.Location = New System.Drawing.Point(305, 135)
-        Me.comboGender.Margin = New System.Windows.Forms.Padding(4)
-        Me.comboGender.Name = "comboGender"
-        Me.comboGender.Size = New System.Drawing.Size(200, 24)
-        Me.comboGender.TabIndex = 10
-        '
-        'customerView
-        '
-        Me.customerView.AllowUserToAddRows = False
-        Me.customerView.AllowUserToDeleteRows = False
-        Me.customerView.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.customerView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.customerView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.customerView.Font = New System.Drawing.Font("Tahoma", 12.0!)
-        Me.customerView.Location = New System.Drawing.Point(16, 294)
-        Me.customerView.Margin = New System.Windows.Forms.Padding(4)
-        Me.customerView.Name = "customerView"
-        Me.customerView.ReadOnly = True
-        Me.customerView.RowHeadersVisible = False
-        Me.customerView.RowHeadersWidth = 51
-        Me.customerView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.customerView.Size = New System.Drawing.Size(772, 294)
-        Me.customerView.TabIndex = 11
-        '
-        'btnSearch
-        '
-        Me.btnSearch.Location = New System.Drawing.Point(17, 217)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(152, 28)
-        Me.btnSearch.TabIndex = 13
-        Me.btnSearch.Text = "Tìm kiếm"
-        Me.btnSearch.UseVisualStyleBackColor = True
-        '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(212, 217)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(152, 28)
-        Me.btnSave.TabIndex = 14
-        Me.btnSave.Text = "Lưu"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Location = New System.Drawing.Point(429, 217)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(152, 28)
-        Me.btnDelete.TabIndex = 15
-        Me.btnDelete.Text = "Xóa"
-        Me.btnDelete.UseVisualStyleBackColor = True
-        '
-        'btnClear
-        '
-        Me.btnClear.Location = New System.Drawing.Point(636, 217)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(152, 28)
-        Me.btnClear.TabIndex = 16
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(805, 614)
-        Me.Controls.Add(Me.btnClear)
-        Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnSearch)
-        Me.Controls.Add(Me.customerView)
-        Me.Controls.Add(Me.comboGender)
-        Me.Controls.Add(Me.labelGender)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.labelEmail)
-        Me.Controls.Add(Me.txtPhone)
-        Me.Controls.Add(Me.labelPhone)
-        Me.Controls.Add(Me.txtAddress)
-        Me.Controls.Add(Me.labelAddress)
-        Me.Controls.Add(Me.txtCustomerName)
-        Me.Controls.Add(Me.labelCustomerName)
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        CType(Me.customerView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        labelCustomerName = New Label()
+        txtCustomerName = New TextBox()
+        labelAddress = New Label()
+        txtAddress = New TextBox()
+        labelPhone = New Label()
+        txtPhone = New TextBox()
+        labelEmail = New Label()
+        txtEmail = New TextBox()
+        labelGender = New Label()
+        comboGender = New ComboBox()
+        customerView = New DataGridView()
+        btnSearch = New Button()
+        btnSave = New Button()
+        btnDelete = New Button()
+        btnClear = New Button()
+        btnExit = New Button()
+        CType(customerView, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' labelCustomerName
+        ' 
+        labelCustomerName.AutoSize = True
+        labelCustomerName.Location = New Point(12, 35)
+        labelCustomerName.Margin = New Padding(4, 0, 4, 0)
+        labelCustomerName.Name = "labelCustomerName"
+        labelCustomerName.Size = New Size(111, 20)
+        labelCustomerName.TabIndex = 1
+        labelCustomerName.Text = "Tên khách hàng"
+        ' 
+        ' txtCustomerName
+        ' 
+        txtCustomerName.Location = New Point(16, 60)
+        txtCustomerName.Margin = New Padding(4, 5, 4, 5)
+        txtCustomerName.Name = "txtCustomerName"
+        txtCustomerName.Size = New Size(200, 27)
+        txtCustomerName.TabIndex = 2
+        ' 
+        ' labelAddress
+        ' 
+        labelAddress.AutoSize = True
+        labelAddress.Location = New Point(301, 35)
+        labelAddress.Margin = New Padding(4, 0, 4, 0)
+        labelAddress.Name = "labelAddress"
+        labelAddress.Size = New Size(55, 20)
+        labelAddress.TabIndex = 3
+        labelAddress.Text = "Địa chỉ"
+        ' 
+        ' txtAddress
+        ' 
+        txtAddress.Location = New Point(305, 60)
+        txtAddress.Margin = New Padding(4, 5, 4, 5)
+        txtAddress.Name = "txtAddress"
+        txtAddress.Size = New Size(200, 27)
+        txtAddress.TabIndex = 4
+        ' 
+        ' labelPhone
+        ' 
+        labelPhone.AutoSize = True
+        labelPhone.Location = New Point(584, 35)
+        labelPhone.Margin = New Padding(4, 0, 4, 0)
+        labelPhone.Name = "labelPhone"
+        labelPhone.Size = New Size(97, 20)
+        labelPhone.TabIndex = 5
+        labelPhone.Text = "Số điện thoại"
+        ' 
+        ' txtPhone
+        ' 
+        txtPhone.Location = New Point(588, 60)
+        txtPhone.Margin = New Padding(4, 5, 4, 5)
+        txtPhone.Name = "txtPhone"
+        txtPhone.Size = New Size(200, 27)
+        txtPhone.TabIndex = 6
+        ' 
+        ' labelEmail
+        ' 
+        labelEmail.AutoSize = True
+        labelEmail.Location = New Point(12, 148)
+        labelEmail.Margin = New Padding(4, 0, 4, 0)
+        labelEmail.Name = "labelEmail"
+        labelEmail.Size = New Size(46, 20)
+        labelEmail.TabIndex = 7
+        labelEmail.Text = "Email"
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.Location = New Point(16, 172)
+        txtEmail.Margin = New Padding(4, 5, 4, 5)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(200, 27)
+        txtEmail.TabIndex = 8
+        ' 
+        ' labelGender
+        ' 
+        labelGender.AutoSize = True
+        labelGender.Location = New Point(301, 148)
+        labelGender.Margin = New Padding(4, 0, 4, 0)
+        labelGender.Name = "labelGender"
+        labelGender.Size = New Size(65, 20)
+        labelGender.TabIndex = 9
+        labelGender.Text = "Giới tính"
+        ' 
+        ' comboGender
+        ' 
+        comboGender.FormattingEnabled = True
+        comboGender.Items.AddRange(New Object() {"Nam", "Nữ"})
+        comboGender.Location = New Point(305, 169)
+        comboGender.Margin = New Padding(4, 5, 4, 5)
+        comboGender.Name = "comboGender"
+        comboGender.Size = New Size(200, 28)
+        comboGender.TabIndex = 10
+        ' 
+        ' customerView
+        ' 
+        customerView.AllowUserToAddRows = False
+        customerView.AllowUserToDeleteRows = False
+        customerView.BackgroundColor = Color.White
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Control
+        DataGridViewCellStyle1.Font = New Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        customerView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        customerView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        customerView.Font = New Font("Tahoma", 12F)
+        customerView.Location = New Point(16, 368)
+        customerView.Margin = New Padding(4, 5, 4, 5)
+        customerView.Name = "customerView"
+        customerView.ReadOnly = True
+        customerView.RowHeadersVisible = False
+        customerView.RowHeadersWidth = 51
+        customerView.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        customerView.Size = New Size(772, 368)
+        customerView.TabIndex = 11
+        ' 
+        ' btnSearch
+        ' 
+        btnSearch.Location = New Point(17, 271)
+        btnSearch.Margin = New Padding(4, 5, 4, 5)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(152, 35)
+        btnSearch.TabIndex = 13
+        btnSearch.Text = "Tìm kiếm"
+        btnSearch.UseVisualStyleBackColor = True
+        ' 
+        ' btnSave
+        ' 
+        btnSave.Location = New Point(177, 271)
+        btnSave.Margin = New Padding(4, 5, 4, 5)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(152, 35)
+        btnSave.TabIndex = 14
+        btnSave.Text = "Lưu"
+        btnSave.UseVisualStyleBackColor = True
+        ' 
+        ' btnDelete
+        ' 
+        btnDelete.Location = New Point(353, 271)
+        btnDelete.Margin = New Padding(4, 5, 4, 5)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(152, 35)
+        btnDelete.TabIndex = 15
+        btnDelete.Text = "Xóa"
+        btnDelete.UseVisualStyleBackColor = True
+        ' 
+        ' btnClear
+        ' 
+        btnClear.Location = New Point(529, 271)
+        btnClear.Margin = New Padding(4, 5, 4, 5)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(152, 35)
+        btnClear.TabIndex = 16
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = True
+        ' 
+        ' btnExit
+        ' 
+        btnExit.Location = New Point(697, 274)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(94, 29)
+        btnExit.TabIndex = 17
+        btnExit.Text = "Exit"
+        btnExit.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(805, 768)
+        Controls.Add(btnExit)
+        Controls.Add(btnClear)
+        Controls.Add(btnDelete)
+        Controls.Add(btnSave)
+        Controls.Add(btnSearch)
+        Controls.Add(customerView)
+        Controls.Add(comboGender)
+        Controls.Add(labelGender)
+        Controls.Add(txtEmail)
+        Controls.Add(labelEmail)
+        Controls.Add(txtPhone)
+        Controls.Add(labelPhone)
+        Controls.Add(txtAddress)
+        Controls.Add(labelAddress)
+        Controls.Add(txtCustomerName)
+        Controls.Add(labelCustomerName)
+        Margin = New Padding(4, 5, 4, 5)
+        Name = "Form1"
+        Text = "Form1"
+        CType(customerView, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
     Friend WithEvents labelCustomerName As System.Windows.Forms.Label
@@ -241,5 +252,6 @@ Partial Class Form1
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents btnExit As Button
 
 End Class
